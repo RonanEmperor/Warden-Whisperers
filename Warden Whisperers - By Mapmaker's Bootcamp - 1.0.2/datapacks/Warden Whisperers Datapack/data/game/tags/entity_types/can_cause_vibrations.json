@@ -1,0 +1,17 @@
+{
+    "values": [   
+    "minecraft:snowball",
+    "minecraft:potion",
+    "minecraft:item",
+    "minecraft:armor_stand",
+    "minecraft:marker",
+    "minecraft:block_display",
+    "minecraft:ender_pearl",
+    "minecraft:arrow",
+    "minecraft:area_effect_cloud",
+    "minecraft:warden",
+    "minecraft:item_display",
+    "minecraft:block_display",
+    "minecraft:text_display"
+    ]
+}

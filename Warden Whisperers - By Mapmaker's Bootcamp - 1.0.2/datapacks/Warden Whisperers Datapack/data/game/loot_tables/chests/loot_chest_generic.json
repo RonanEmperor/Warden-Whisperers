@@ -1,0 +1,184 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min":2,
+        "max":5
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_leggings",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:swift_sneak\",lvl:3}],Unbreakable:1}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion: \"minecraft:water\", CustomPotionEffects: [{Id: 14, Amplifier: 0, Duration: 600, ShowParticles: true, ShowIcon: true}], display: {Name: '{\"text\": \"Potion of Invisibility (0:30)\", \"color\": \"green\", \"italic\": \"false\"}'},HideFlags:32}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion: \"minecraft:water\", CustomPotionEffects: [{Id: 15, Amplifier: 0, Duration: 200, ShowParticles: true, ShowIcon: true}], display: {Name: '{\"text\": \"Splash Potion of Blindness (0:10)\", \"color\": \"red\", \"italic\": \"false\"}'},HideFlags:32}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion: \"minecraft:water\", CustomPotionEffects: [{Id: 8, Amplifier: 3, Duration: 900, ShowParticles: true, ShowIcon: true}], display: {Name: '{\"text\": \"Potion of Leaping (0:45)\", \"color\": \"green\", \"italic\": \"false\"}'},HideFlags:32}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:goat_horn",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{instrument:\"minecraft:seek_goat_horn\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments: [{id: \"minecraft:lure\", lvl:1}], HideFlags: 33, display: {Name: '{\"text\": \"Ancient Crossbow\", \"italic\": false, \"color\": \"light_purple\"}',Lore:['{\"text\":\"The Warden will attack the player shot with this arrow.\",\"color\":\"gray\"}']}, ChargedProjectiles: [{id: \"minecraft:tipped_arrow\", Count: 1b, tag: {CustomPotionEffects:[{Id: 10, Amplifier: 255, ShowParticles: 0b, Duration: 5}]}}], Charged: 1b, Loaded: 1b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion: \"minecraft:water\", CustomPotionEffects: [{Id: 2, Amplifier: 9, Duration: 60, ShowParticles: true, ShowIcon: true}], display: {Name: '{\"text\": \"Lingering Potion of Slowness III (0:05)\", \"color\": \"red\", \"italic\": \"false\"}'},HideFlags:32}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion: \"minecraft:water\", CustomPotionEffects: [{Id: 16, Amplifier: 0, Duration: 1200, ShowParticles: true, ShowIcon: true}], display: {Name: '{\"text\": \"Potion of Night Vision (1:00)\", \"color\": \"green\", \"italic\": \"false\"}'},HideFlags:32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

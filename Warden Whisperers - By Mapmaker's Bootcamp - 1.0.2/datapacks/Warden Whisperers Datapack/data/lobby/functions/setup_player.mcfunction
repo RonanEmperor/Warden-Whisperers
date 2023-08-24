@@ -1,0 +1,18 @@
+kill @e[type=minecraft:warden]
+team join player @s[tag=!spec]
+team join spec @s[tag=spec]
+tp @s 0 65 0
+clear @s
+effect clear @s
+scoreboard players set @s ingame 0
+gamemode adventure @s
+
+# Effects
+effect give @s saturation infinite 255 true
+effect give @s weakness infinite 255 true
+effect give @s regeneration infinite 255 true
+
+# Help books
+item replace entity @a hotbar.0 with minecraft:written_book{author:"Warden Whisperers",pages:['["",{"text":"Welcome to Warden Whisperers!", "color":"red", "bold":true, "underlined":false}, {"text":"\\n\\nHow To Play", "color":"light_purple", "underlined":true,"bold":true},{"text":"\\n\\nThe goal of this game is to be the last one standing against all the other players by surviving from the Warden.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"Items", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nYou are also given items to help you defend against the Warden, or sabotage the other players so they get caught first.\\n\\nLoot Chests can spawn around the map containing extra items if enabled.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"Settings", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nFinally, there are many settings that you can adjust to change how the game plays out.\\n\\nFor example, you can enable or disable PvP, Darkness, or select different maps.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"Most importantly, thank you for playing and have fun!\\n\\n  - RonanEmperor, Lazoh, and thayus", "color":"black", "bold":false, "underlined":false}]'], title:"How to Play"}
+
+item replace entity @a hotbar.1 with minecraft:written_book{author:"Warden Whisperers",pages:['["",{"text":"Abilities", "color":"light_purple", "bold":true, "underlined":true}, {"text":"\\n\\nAbilities are tools that you can use to escape the Warden or sabotage other players!\\n\\nAbilities may be enabled or disabled in the settings in the lobby.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"1. Quick Getaway", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nThis ability gives the player extra speed for II for 10 seconds and has a cooldown of 45 seconds.\\n\\nAdditionally, it will make the Warden forget it was chasing you.\\n\\nMust be used within 10 blocks of the Warden.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"2. Health Boost", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nUsing this ability gives the player 20 absorption hearts, for 60 seconds.\\n\\nThis ability has a cooldown of 90 seconds and can be used at any time.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"3. Random Swap", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nUsing this ability will swap you with another player in the match.\\n\\nAfter using this ability, you will be frozen for 1 second!\\n\\nThis ability has a cooldown of 60 seconds.", "color":"black", "bold":false, "underlined":false}]','["",{"text":"4. Ancient Crossbow", "color":"light_purple", "bold":true, "underlined":true},{"text":"\\n\\nShooting a player with the Ancient Crossbow will make  the warden chase them.\\n\\nAncient Crossbows will spawn periodically throughout the game, nearby the Warden.", "color":"black", "bold":false, "underlined":false}]'], title: "Abilities"}

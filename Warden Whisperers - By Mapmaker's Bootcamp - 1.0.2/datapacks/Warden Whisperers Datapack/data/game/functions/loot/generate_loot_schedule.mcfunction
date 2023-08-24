@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:marker,tag=loot] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #game:loot_spawnable run function game:loot/generate_loot

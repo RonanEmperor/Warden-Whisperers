@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min":1,
+        "max":1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments: [{id: \"minecraft:lure\", lvl:1}], HideFlags: 33, display: {Name: '[{\"text\": \"Ancient Crossbow\", \"italic\": false, \"color\": \"light_purple\", \"bold\": true}, {\"text\":\" Ability\", \"color\": \"gray\", \"bold\": false}]'}, ChargedProjectiles: [{id: \"minecraft:tipped_arrow\", Count: 1b, tag: {CustomPotionEffects:[{Id: 10, Amplifier: 255, ShowParticles: 0b, Duration: 5}]}}], Charged: 1b, Loaded: 1b}"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "A warden will attack a player shot with this crossbow.",
+                  "color": "gray"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Uses Remaining: 1",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

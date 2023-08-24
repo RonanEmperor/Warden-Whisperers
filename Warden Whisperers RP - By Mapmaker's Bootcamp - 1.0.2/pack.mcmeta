@@ -1,0 +1,14 @@
+{
+	"pack": {
+		"pack_format": 15,
+		"description": [
+            "",
+            { "text": "Warden Whisperers", "color": "gold", "bold": true },
+            "\n",
+            { "text": "By ", "color": "gray" },
+            { "text": "Mapmaker's Bootcamp", "color": "blue" },
+            { "text": " - ", "color": "gray" },
+            { "text": "1.0.2", "color": "gold" }
+        ]
+	}
+}

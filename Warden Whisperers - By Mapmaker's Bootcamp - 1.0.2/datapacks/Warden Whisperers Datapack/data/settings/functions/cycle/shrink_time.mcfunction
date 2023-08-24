@@ -1,0 +1,17 @@
+# Cycle through setting
+scoreboard players add .shrink_time settings 1
+execute if score .shrink_time settings matches 6 run scoreboard players set .shrink_time settings 0
+
+# Display text based on adjustment
+execute if score .shrink_time settings matches 0 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will no longer shrink.","underlined":false},{"text":" (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+execute if score .shrink_time settings matches 1 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will now shrink over ","underlined":false},{"text":"2 minutes","color":"green","bold":true},{"text":". (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+execute if score .shrink_time settings matches 2 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will now shrink over ","underlined":false},{"text":"3 minutes","color":"green","bold":true},{"text":". (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+execute if score .shrink_time settings matches 3 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will now shrink over ","underlined":false},{"text":"4 minutes","color":"green","bold":true},{"text":". (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+execute if score .shrink_time settings matches 4 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will now shrink over ","underlined":false},{"text":"5 minutes","color":"green","bold":true},{"text":". (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+execute if score .shrink_time settings matches 5 run tellraw @s [{"text":"["},{"text":"⛏","color":"gold"},{"text":"] ","color":"white","bold":false},{"text":"World Border","color":"gray","underlined":true},{"text":" will now shrink over ","underlined":false},{"text":"6 minutes","color":"green","bold":true},{"text":". (?)","color":"gray","bold":false,"hoverEvent": {"action": "show_text","value":[{"text":"Controls the time it takes for the border to close.","color":"gray","bold":false,"italic":true}]}}]
+
+# Update sign
+function settings:update/shrink_time
+
+# Sound feedback
+playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1

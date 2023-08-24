@@ -1,0 +1,12 @@
+{
+    "values":[
+        "game:loop_1s",
+        "game:loop_10t",
+        "game:loop_1s",
+        "game:loop_20s",
+        "game:border/setup",
+        "game:begin",
+        "game:loot/create_loot_markers",
+        "game:loot/generate_loot"
+        ]
+}

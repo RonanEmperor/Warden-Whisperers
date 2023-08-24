@@ -1,0 +1,3 @@
+execute unless score @s parkour_time_secs < .10 constants run title @s actionbar [{"text":"Parkour Time: ", "color": "yellow"}, {"score": {"objective": "parkour_time_mins", "name": "@s"}}, [":"], {"score": {"objective": "parkour_time_secs", "name": "@s"}}, ["."], {"score": {"objective": "parkour_time_ms", "name": "@s"}}]
+
+execute if score @s parkour_time_secs < .10 constants run title @s actionbar [{"text":"Parkour Time: ", "color": "yellow"}, {"score": {"objective": "parkour_time_mins", "name": "@s"}}, [":0"], {"score": {"objective": "parkour_time_secs", "name": "@s"}}, ["."], {"score": {"objective": "parkour_time_ms", "name": "@s"}}]
